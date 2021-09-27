@@ -2,7 +2,7 @@
 
 ---
 
-### Grad School Projects 
+### Grad School Projects and Professional Work
 
 [Analysis of the Existing Electric Vehicle Infrastructure in the DFW Metroplex](/pdf/JMammen_GIS5253-999_FinalProject.pdf)
 <img src="/images/Dallas_Driveshed_Mile.jpg">
