@@ -5,7 +5,7 @@
 ### Grad School Projects 
 
 [Electric Vehicle Charging Station Drivesheds in Dallas, TX](/sample_page)
-<img src="images/Dallas_Driveshed_Mile.jpg>
+<img src="/images/Dallas_Driveshed_Mile.jpg">
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
