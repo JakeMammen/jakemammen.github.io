@@ -8,7 +8,7 @@
 <img src="/images/Dallas_Driveshed_Mile.jpg">
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[A Spatial Analysis of Wind Turbines across the United States](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
