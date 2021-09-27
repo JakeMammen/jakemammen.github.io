@@ -22,7 +22,7 @@ if (isAwesome){
 
 ### 3. Support the selection of appropriate statistical tools and techniques
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="/images/Buffer_Airport_Turbine_ArcMap.jpg">
 
 ### 4. Provide a basis for further data collection through surveys or experiments
 
