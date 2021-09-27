@@ -1,6 +1,6 @@
-## This can be your internal website page / project page
+## This page will show some of my spatial programming and GIS experience
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Project description:** This project uses a GIS framework to analyze land suitability for wind turbines based off the impact certain factors such as environmental, ecological, cultural, human settlement, and physical infrastructure have on wind turbine placement. More specifically differences in wind speed; distances from a road network, urban areas, and differences in the topography of the land could prove to be the primary factors in determining land suitability for wind turbines across the United States. This project uses a GIS and programming approach to analyze various energy and geographic datasets. As a result, the various patterns are illustrated through the use of maps by determining wind turbine placement and in return provide some useful information for planners and engineers to aid in decision making.
 
 ### 1. Suggest hypotheses about the causes of observed phenomena
 
