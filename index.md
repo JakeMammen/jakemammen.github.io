@@ -9,7 +9,7 @@
 
 ---
 [A Spatial Analysis of Wind Turbines across the United States](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="/images/Density_Turbine_ArcMap.jpg">
 
 ---
 [Project 3 Title](http://example.com/)
