@@ -4,7 +4,7 @@
 
 ### Grad School Projects 
 
-[Analysis of the Existing Electric Vehicle Infrastructure in the DFW Metroplex](/sample_page)
+[Analysis of the Existing Electric Vehicle Infrastructure in the DFW Metroplex](/pdf/sample_presentation.pdf)
 <img src="/images/Dallas_Driveshed_Mile.jpg">
 
 ---
