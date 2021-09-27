@@ -12,7 +12,7 @@
 <img src="/images/Density_Turbine_ArcMap.jpg">
 
 ---
-[GIS within my current Profession](/pdf/JMammen_GIS5253-999_FinalProject.pdf)
+[GIS within my current Profession](/pdf/EM Briefing Deck TC Ida.pdf)
 <img src="/images/Dallas_Driveshed_Mile.jpg">
 
 ---
