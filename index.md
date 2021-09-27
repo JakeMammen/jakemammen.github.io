@@ -13,7 +13,7 @@
 
 ---
 [GIS within my current Profession](/pdf/EM Briefing Deck TC Ida.pdf)
-<img src="/images/Dallas_Driveshed_Mile.jpg">
+<img src="/images/GAs_Outages.png">
 
 ---
 
