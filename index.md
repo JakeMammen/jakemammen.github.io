@@ -19,7 +19,7 @@
 
 ### ArcGIS Online Map Examples
 
-[![California Wildfires(<50% Contained)](images/GIS_Online_Map.PNG)](https://arcg.is/DvXHH)
+[![California Wildfires(<50% Contained)](images/GIS_Online_Map.PNG)](https://arcg.is/1C4rWK)
 - [Project 2 Title](http://example.com/)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
