@@ -6,7 +6,7 @@
 
 In order to perform geoprocessing techniques for this project and throughout this program, I first had to download data and make sure it was stored in a folder on the local computer. After data collection, four different geoprocessing tools were selected to carry out the analysis.
 
-### Clip Analysis
+### Clip Analysis:
 
 ```javascript
 # Description: Perform a clip of turbines or airports taking user input
@@ -41,7 +41,7 @@ else:
     print(output_file)
 ```
 
-### Density or Hot Spot Analysis
+### Density or Hot Spot Analysis:
 
 ```javascript
 # Description: Perform a density or hot spot analysis of wind turbines throughout the U.S. taking user input.
