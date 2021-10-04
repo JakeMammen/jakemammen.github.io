@@ -112,7 +112,7 @@ arcpy.Buffer_analysis(turbines, turbinesBuffer, distanceField, sideType, endType
 print(output_file2, "Buffer Distance: ", buffer_dist)
 ```
 
-## Support the selection of appropriate statistical tools and techniques:
+## Support the selection of appropriate statistical tools and techniques (desired outcome):
 
 <img src="/images/Buffer_Airport_Turbine_ArcMap.jpg">
 
