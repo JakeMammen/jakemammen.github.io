@@ -12,7 +12,7 @@
 <img src="/images/Density_Turbine_ArcMap.jpg">
 
 ---
-[GIS within my current Profession](/pdf/EM Briefing Deck TC Ida.pdf)
+[GIS within my current Profession](images/)
 <img src="/images/GAs_Outages.png">
 
 ---
