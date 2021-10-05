@@ -20,7 +20,7 @@
 ### ArcGIS Online Map Examples
 
 [![California Wildfires(<50% Contained)](images/GIS_Online_Map.PNG)](https://arcg.is/1C4rWK)
-- [![Comparing the perceptions and socioeconomic impacts of wind farms over time: a case study of Weatherford, Oklahoma](/pdf/(http://example.com/)
+- [![Comparing the perceptions and socioeconomic impacts of wind farms over time: a case study of Weatherford, Oklahoma](/pdf/Capstone_Poster.pdf)](/pdf/Capstone_Final_Paper.pdf)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
 - [Project 5 Title](http://example.com/)
