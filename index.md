@@ -12,7 +12,7 @@
 <img src="/images/Density_Turbine_ArcMap.jpg">
 
 ---
-[GIS within my current Profession](images/)
+[GIS within my current Profession](images/Road_Closures.PNG)
 <img src="/images/GAs_Outages.png">
 
 ---
