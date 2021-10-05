@@ -17,13 +17,14 @@
 
 ---
 
-### ArcGIS Online Map Examples
+### ArcGIS Online Map Example
 
 [![California Wildfires(<50% Contained)](images/GIS_Online_Map.PNG)](https://arcg.is/1C4rWK)
+
+### Undergrad Capstone Project
+
 [![Comparing the perceptions and socioeconomic impacts of wind farms over time: a case study of Weatherford, Oklahoma](/images/Capstone_Poster.png)](/pdf/Capstone_Final_Paper.pdf)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+
 
 ---
 
