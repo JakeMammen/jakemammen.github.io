@@ -25,7 +25,6 @@
 
 [![Comparing the perceptions and socioeconomic impacts of wind farms over time: a case study of Weatherford, Oklahoma](/images/Capstone_Poster.png)](/pdf/Capstone_Final_Paper.pdf)
 
-
 ---
 
 
