@@ -11,16 +11,6 @@
 [A Spatial Analysis of Wind Turbines across the United States](/sample_page)
 <img src="/images/Density_Turbine_ArcMap.jpg">
 
----
-[GIS within my current Profession](/images/Road_Closures.PNG)
-<img src="/images/GAs_Outages.png">
-
----
-
-### ArcGIS Online Map Example
-
-[![California Wildfires(<50% Contained)](images/GIS_Online_Map.PNG)](https://arcg.is/1C4rWK)
-
 ### Research
 
 [![Comparing the perceptions and socioeconomic impacts of wind farms over time: a case study of Weatherford, Oklahoma](/images/Capstone_Poster.png)](/pdf/Capstone_Final_Paper.pdf)
