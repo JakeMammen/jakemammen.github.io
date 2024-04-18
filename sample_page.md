@@ -120,4 +120,3 @@ print(output_file2, "Buffer Distance: ", buffer_dist)
 
 As a result, this project provides the user a geoprocessing program with the ability to view and anlayze the various patterns in determining wind turbine placement and provide some useful information for planners and engineers to aid in decision making. For those who want to research further and continue with the project, I may suggest adding a little more detail at the local level such as road networks and local demographic information.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
