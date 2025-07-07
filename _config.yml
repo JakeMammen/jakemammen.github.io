@@ -165,6 +165,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - jekyll-include-cache
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
