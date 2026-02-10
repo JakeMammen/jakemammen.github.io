@@ -27,6 +27,10 @@
 
 ### Research
 
+[Understanding the Influence of Socioeconomic and Environmental Characteristics on the Development of New Wind Farms](pdf/Mammen_ResearchPaper.pdf)
+<img src="/images/TX_TotHousingUnits_WF.png">
+
+_Click the below to see more_
 [![Comparing the perceptions and socioeconomic impacts of wind farms over time: a case study of Weatherford, Oklahoma](/images/Capstone_Poster.png)](/pdf/Capstone_Final_Paper.pdf)
 
 ---
