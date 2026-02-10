@@ -14,6 +14,9 @@
 [A Spatial Analysis of Wind Turbines across the United States](/sample_page)
 <img src="/images/Density_Turbine_ArcMap.jpg">
 
+[A Spatial Analysis of Charging Station Data in the Dallas-Fort Worth Metroplex](/pdf/An_Analysis_of_Charging_Station_Data_in_DFW_Term_Project.pdf)
+<img src="/images/Charging_Stations_Dallas_TX_by_City_Region_Alternative.png">
+
 ---
 
 ### Research
