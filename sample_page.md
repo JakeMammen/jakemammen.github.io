@@ -1,10 +1,10 @@
-## This page will show some of my spatial programming and GIS experience
+## Spatial programming and GIS experience
 
 **Project description:** This project uses a GIS framework to create a geoprocessing program that analyzes land suitability for wind turbines based off the impact certain factors such as environmental, ecological, cultural, human settlement, and physical infrastructure have on wind turbine placement. More specifically differences in wind speed; distances from a road network, urban areas, and differences in the topography of the land could prove to be the primary factors in determining land suitability for wind turbines across the United States. This project uses a GIS and programming approach to analyze various energy and geographic datasets. As a result, the various patterns are illustrated through the use of maps by determining wind turbine placement and in return provide some useful information for planners and engineers to aid in decision making.
 
-## Coding examples used throughout this program:
+## Coding examples:
 
-In order to perform geoprocessing techniques for this project, I first had to download data and make sure it was stored in a folder on the local computer. After data collection, four different geoprocessing tools were selected to carry out the analysis.
+In order to perform geoprocessing techniques for this particular use case, we need to download the data first and make sure it was stored in a folder on the local computer. After data collection, four different geoprocessing tools were selected to carry out the analysis.
 
 ### Clip Analysis:
 
@@ -15,7 +15,7 @@ In order to perform geoprocessing techniques for this project, I first had to do
 import arcpy
 
 # Set environment or workspace settings
-arcpy.env.workspace = r"C:\Users\jakem\OneDrive\Desktop\SpatialProgrammingandGIS\TermProject\TestData\All_Data"
+arcpy.env.workspace = r"C:\Users\user\folder\All_Data"
 
 # Ask the user for input
 clip_turbine_or_airport = input("Enter Clip, Turbine or Airport?: ")
@@ -75,7 +75,7 @@ outPdens.save(output_file)
 
 ```javascript
 # Set the workspace
-arcpy.env.workspace = r"C:\Users\jakem\OneDrive\Desktop\SpatialProgrammingandGIS\TermProject\TestData\Term_Project_Outputs"
+arcpy.env.workspace = r"C:\Users\user\folder\Term_Project_Outputs"
 
 # Set variables
 in_features = "OK_TX_Counties.shp"
@@ -93,9 +93,9 @@ arcpy.Select_analysis(in_features, out_feature_class, where_clause)
 import arcpy
 
 # Set environment or workspace settings
-arcpy.env.workspace = r"C:\Users\jakem\OneDrive\Desktop\SpatialProgrammingandGIS\TermProject\TestData\Term_Project_Outputs"
+arcpy.env.workspace = r"C:\Users\user\folder\Term_Project_Outputs"
 
-output_file2 = r"C:\Users\jakem\OneDrive\Desktop\SpatialProgrammingandGIS\TermProject\TestData\Term_Project_Outputs\TurbBuffer"
+output_file2 = r"C:\Users\user\folder\TurbBuffer"
 buffer_dist = input("Enter buffer distance: ")
 
 # Buffer areas of aiports in Maine
