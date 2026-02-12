@@ -2,7 +2,7 @@
 
 ---
 
-### Experience (more coming soon)
+### Experience and Demonstration of skills (more coming soon)
 
 ---
 
