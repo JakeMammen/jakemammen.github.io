@@ -1,12 +1,12 @@
-## Portfolio
+# Portfolio
 
 ---
 
-### Experience and Skills (more coming soon)
+## Experience and Skills (more coming soon)
 
 ---
 
-### Projects
+## Projects
 
 [Analysis of the Existing Electric Vehicle Infrastructure in the DFW Metroplex](/pdf/JMammen_GIS5253-999_FinalProject.pdf)
 <img src="/images/Dallas_Driveshed_Mile.jpg">
@@ -25,7 +25,7 @@
 
 ---
 
-### Research
+## Research
 
 [Understanding the Influence of Socioeconomic and Environmental Characteristics on the Development of New Wind Farms](pdf/Mammen_ResearchPaper.pdf)
 <img src="/images/TX_TotHousingUnits_WF.png">
