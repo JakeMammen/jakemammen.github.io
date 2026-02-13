@@ -1,6 +1,6 @@
 ## Working with Spatial Data in R
 
-**Description:** In spatial statistics a go-to first step is to always explore the data you're working with. It is always good pratice to plot and visualize the data before fitting any statistical models.
+**Description:** In spatial statistics, you want to always explore the data you're working with as a go-to first step. It's considered good pratice to plot and visualize the data before fitting any statistical models.
 - What is the distribution of the data?
 - Are there any outliers?
 - etc.
@@ -54,6 +54,7 @@ title("Percentage of the county's residents classified
 legend("topright", legend=c("Urban Counties", "Suburban Counties", "Rural Counties"), 
        fill=c("orangered3", "orange", "lightgoldenrod1", border = "black"))
 ```
+<img src="/images/Buffer_Airport_Turbine_ArcMap.jpg">
 
 ### Scenario:
 
@@ -70,6 +71,7 @@ title("High Percentage of the county's residents
 legend("topright", legend=c("Elderly and in Poverty"), 
        fill=c("red", border = "black"))
 ```
+<img src="/images/Buffer_Airport_Turbine_ArcMap.jpg">
 
 ### Predict median income based on the percentage of residents with a Bachelor's degree:
 
