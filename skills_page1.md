@@ -71,7 +71,7 @@ title("High Percentage of the county's residents
 legend("topright", legend=c("Elderly and in Poverty"), 
        fill=c("red", border = "black"))
 ```
-<img src="/images/Buffer_Airport_Turbine_ArcMap.jpg">
+<img src="/images/Plot2.jpeg">
 
 ### Predict median income based on the percentage of residents with a Bachelor's degree:
 
@@ -109,5 +109,5 @@ title("Median Income based off the percentage of
 choro.legend("topright", sh = shades, fmt="%4.1f",cex=0.8,title='Perdiction of Median Income')
 ```
 
-<img src="/images/Buffer_Airport_Turbine_ArcMap.jpg">
+<img src="/images/Plot3.jpeg">
 
