@@ -2,11 +2,11 @@
 
 ---
 
-### Experience and Demonstration of skills (more coming soon)
+### Experience and Skills (more coming soon)
 
 ---
 
-### Grad School Projects and Other
+### Projects
 
 [Analysis of the Existing Electric Vehicle Infrastructure in the DFW Metroplex](/pdf/JMammen_GIS5253-999_FinalProject.pdf)
 <img src="/images/Dallas_Driveshed_Mile.jpg">
