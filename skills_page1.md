@@ -1,10 +1,13 @@
 ## Working with Spatial Data in R
 
-**Description:** This project uses a GIS framework to create a geoprocessing program that analyzes land suitability for wind turbines based off the impact certain factors such as environmental, ecological, cultural, human settlement, and physical infrastructure have on wind turbine placement. More specifically differences in wind speed; distances from a road network, urban areas, and differences in the topography of the land could prove to be the primary factors in determining land suitability for wind turbines across the United States. This project uses a GIS and programming approach to analyze various energy and geographic datasets. As a result, the various patterns are illustrated through the use of maps by determining wind turbine placement and in return provide some useful information for planners and engineers to aid in decision making.
+**Description:** In spatial statistics a go-to first step is to always explore the data you're working with. It is always good pratice to plot and visualize the data before fitting any statistical models.
+- What is the distribution of the data?
+- Are there any outliers?
+- etc.
 
 ## Coding examples:
 
-In order to perform geoprocessing techniques for this particular use case, we need to download the data first and make sure it was stored in a folder on the local computer. After data collection, four different geoprocessing tools were selected to carry out the analysis.
+In R I used the 'GISTools' library which contains a number of utilities for handling and visualising geographical data of a “Spatial” or “sf” object - for example choropleth mapping with 'nice' legends. The data being used is a polygon data frame containing social and economic data by county in Georiga. 
 
 ### Import proper library and call the dataset:
 
@@ -15,6 +18,11 @@ plot(georgia)
 ```
 
 ### Create layers to visualize Urban, Suburban and Rural Counties in Georgia:
+
+In this use case, I explored the variable "PctRural" which gives the percentage of each county's residents as rural. Then created layers to classify the percentage of the county's residents by Urban, Suburban, and Rural.
+- Urban (no more than 10% rural)
+- Suburban (between 10% and 70% rural)
+- Rural (at least 70% rural)
 
 ```javascript
 # Create new layer for urban counties
@@ -30,7 +38,9 @@ rural_counties <- georgia[georgia$PctRural >= 70,]
 plot(rural_counties)
 ```
 
-### Plot map:
+### Plot Map:
+
+Took the layers I created and created a three-color choropleth map that differentiates the three classifications without using the coropleth function in R. 
 
 ```javascript
 # Plot Georgia
@@ -45,36 +55,57 @@ legend("topright", legend=c("Urban Counties", "Suburban Counties", "Rural Counti
        fill=c("orangered3", "orange", "lightgoldenrod1", border = "black"))
 ```
 
-### Buffering to illustrate wind turbines relationship to airports:
+### Scenario:
+
+A social organization wishes to identify counties that have both a high percentage of elderly residents (i.e., PctEld > 15) and a high percentage of residents in poverty (i.e., PctPov > 30). Created a map to show the counties with residents who have hight elderly and in poverty population in red and all other counties in white.
 
 ```javascript
-# Import system modules 
-import arcpy
+eldpov <- georgia[georgia$PctEld > 15 & georgia$PctPov > 30,]
+plot(eldpov)
 
-# Set environment or workspace settings
-arcpy.env.workspace = r"C:\Users\user\folder\Term_Project_Outputs"
-
-output_file2 = r"C:\Users\user\folder\TurbBuffer"
-buffer_dist = input("Enter buffer distance: ")
-
-# Buffer areas of aiports in Maine
-turbines = "Turb_Panhandle_Counties.shp"
-turbinesBuffer = output_file2
-distanceField = buffer_dist
-sideType = "FULL"
-endType = "ROUND"
-dissolveType = "ALL"
-
-# Execute Buffer
-arcpy.Buffer_analysis(turbines, turbinesBuffer, distanceField, sideType, endType, 
-                      dissolveType)
-print(output_file2, "Buffer Distance: ", buffer_dist)
+plot(georgia)
+plot(eldpov, add=T, col="red")
+title("High Percentage of the county's residents 
+      who are Elderly and residents who are in Poverty       ")
+legend("topright", legend=c("Elderly and in Poverty"), 
+       fill=c("red", border = "black"))
 ```
 
-## Support the selection of appropriate statistical tools and techniques (desired outcome):
+### Predict median income based on the percentage of residents with a Bachelor's degree:
+
+Fit a linear regression model.
+- First create a basic scatterplot to visualize median income and those who have a bachelor's degree.
+- Then firt a linear regression line.
+- Run correlation test to see how strong the relationship between the two variables are (cor. 0.522771), which shows a moderate strenth relationship. As one variable increases the other tends to increase as well.
+- The output of the below linear regression model is highly statistically significant (p-value of 1.566e-12) and explains approximately 27.33% of the variance in the dependent variable. (R^2 value is 0.2733) 
+
+```javascript
+plot (georgia$MedInc,georgia$PctBach, 
+      col = "blue",
+      main = "Median Income based on the Percentage of 
+      residents with a Bachelor's degree     ",
+      xlab = "Median Income",
+      ylab = "Bachelor's degree")
+
+
+abline(lm(georgia$PctBach ~ georgia$MedInc),col="red")
+
+cor.test(georgia$PctBach,georgia$MedInc)
+
+Georgiareg <- lm (PctBach ~ MedInc, data = georgia)
+Georgiareg
+summary (Georgiareg)
+
+resid(lm(georgia$PctBach ~ georgia$MedInc))
+
+Georgiareg$residuals
+
+shades <- auto.shading(Georgiareg$residuals, cols=brewer.pal(5, "Reds"))
+choropleth(georgia, Georgiareg$residuals, shading = shades)
+title("Median Income based off the percentage of
+      residents with a Bachelor's Degree       ")
+choro.legend("topright", sh = shades, fmt="%4.1f",cex=0.8,title='Perdiction of Median Income')
+```
 
 <img src="/images/Buffer_Airport_Turbine_ArcMap.jpg">
 
-## A basis for further data collection through results and conclusion:
-
-As a result, this project provides the user a geoprocessing program with the ability to view and anlayze the various patterns in determining wind turbine placement and provide some useful information for planners and engineers to aid in decision making. For those who want to research further and continue with the project, I may suggest adding a little more detail at the local level such as road networks and local demographic information.
