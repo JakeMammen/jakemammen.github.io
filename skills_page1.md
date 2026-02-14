@@ -54,7 +54,7 @@ title("Percentage of the county's residents classified
 legend("topright", legend=c("Urban Counties", "Suburban Counties", "Rural Counties"), 
        fill=c("orangered3", "orange", "lightgoldenrod1", border = "black"))
 ```
-<img src="/images/Buffer_Airport_Turbine_ArcMap.jpg">
+<img src="/images/Plot1_1.png">
 
 ### Scenario:
 
@@ -108,6 +108,9 @@ title("Median Income based off the percentage of
       residents with a Bachelor's Degree       ")
 choro.legend("topright", sh = shades, fmt="%4.1f",cex=0.8,title='Perdiction of Median Income')
 ```
+<img src="/images/Scatter_plot_with_reg_line.png">
+
+<img src="/images/regression_model.png">
 
 <img src="/images/Plot3.jpeg">
 
