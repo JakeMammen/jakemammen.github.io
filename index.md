@@ -4,6 +4,9 @@
 
 ## Experience and Skills (more coming soon)
 
+[Working with Spatial Data in R](/skills_page1)
+<img src="/images/Density_Turbine_ArcMap.jpg">
+
 ---
 
 ## Projects
