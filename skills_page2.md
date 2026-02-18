@@ -1,4 +1,4 @@
-## Cluster Analysis in R
+## Census Block Cluster Analysis in R
 
 **Description:** In spatial statistics, you want to always explore the data you're working with as a go-to first step. It's considered good pratice to plot and visualize the data before fitting any statistical models.
 - What is the distribution of the data?
