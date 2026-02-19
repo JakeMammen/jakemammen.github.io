@@ -1,113 +1,124 @@
-## Census Block Cluster Analysis in R
+# Spatial Clustering of Crime Patterns in Fort Worth, TX  
+**K-Means Analysis of Robbery, Commercial Burglary, and Kidnapping at the Census Block Level**
 
-**Description:** In spatial statistics, you want to always explore the data you're working with as a go-to first step. It's considered good pratice to plot and visualize the data before fitting any statistical models.
-- What is the distribution of the data?
-- Are there any outliers?
-- etc.
+**Description:** This project applies **machine-learning based clustering** (k-means clustering) to explore spatial patterns in selected serious crimes across Fort Worth, Texas. By aggregating counts of robbery, commercial burglary, and kidnapping incidents to census block groups, we identify clusters of similar crime profiles and visualize them on a map.
+
+The analysis uses geospatial data handling in R, point-in-polygon counting, elbow-method cluster selection, and choropleth mapping to reveal potential crime "hotspots" or typological groupings.
+- Aggregates point-based crime incidents to census block groups using `spatstat::poly.counts`
+- Performs k-means clustering on crime count features (3 crime types × 14,940 blocks)
+- Determines optimal number of clusters via within-sum-of-squares (WSS / elbow) plot
+- Produces a clean, colored map of 10-cluster assignments using `sf` and base R plotting
+- Focuses on interpretable spatial insights for urban crime analysis
+
+## Data Sources
+- **Census Blocks**: Block group polygons from Census.gov TIGER/Line database
+- **Crime Incidents**: Point or small-area crime data filtered from data.fortworthtexas.gov open data portal.
+
+**Note**: The shapefiles used for the analysis were created during the data exploration and manipulation stage. Used QGIS to visualize the data, perform data manipulation, geoprosseing tools such as clip, and then exported the data as shapefiles. Replace with your local paths or obtain public equivalents (e.g., Fort Worth Open Data portal for crime, Census Bureau for blocks).
 
 ## Coding examples:
 
-In R I used the 'GISTools' library which contains a number of utilities for handling and visualising geographical data of a “Spatial” or “sf” object - for example choropleth mapping with 'nice' legends. The data being used is a polygon data frame containing social and economic data by county in Georiga. 
+In R I used ther following packages to carry out the analysis:
+- `spatstat`
+- `GISTools`
+- `cluster`
+- `dplyr`
+- `sf`
+- `viridis`
+- `RColorBrewer`
 
-### Import proper library and call the dataset:
+### Load and Prepare Spatial Data:
+
+- Read in the Census block groups and crime data as `sf` objects.
+- Ensure consistent coordinate reference system (CRS) via the `st_transform()` function.
 
 ```javascript
-library("GISTools")
-data(georgia)
-plot(georgia)
+blocks <- read_sf("Fort_WorthBG.shp")
+crime  <- read_sf("Crime_TypesBG.shp")
+blocks <- st_transform(blocks, crs = st_crs(crime))
 ```
 
-### Create layers to visualize Urban, Suburban and Rural Counties in Georgia:
+### Filter and Count Crimes by Block:
 
-In this use case, I explored the variable "PctRural" which gives the percentage of each county's residents as rural. Then created layers to classify the percentage of the county's residents by Urban, Suburban, and Rural.
-- Urban (no more than 10% rural)
-- Suburban (between 10% and 70% rural)
-- Rural (at least 70% rural)
+- Subset incidents for robbery, commerical burglary, and kidnapping.
+- Used the `poly.counts` function to count points falling within each block group polygon.
 
 ```javascript
-# Create new layer for urban counties
-urban_counties <- georgia[georgia$PctRural <= 10,]
-plot(urban_counties)
+robbery <- crime |> filter(Nature_Of_ == "ROBBERY")
+burglary_commercial <- crime |> filter(Nature_Of_ == "BURGLARY COMMERCIAL")
+kidnapping <- crime |> filter(Nature_Of_ == "KIDNAPPING")
 
-# Create new layer for suburban counties
-suburban_counties <- georgia[georgia$PctRural > 10 & georgia$PctRural < 70,]
-plot(suburban_counties)
-
-# Create new layer for rural counties
-rural_counties <- georgia[georgia$PctRural >= 70,]
-plot(rural_counties)
+robberycount <- poly.counts(robbery, blocks)
+burglary_commercialcount <- poly.counts(burglary_commercial, blocks)
+kidnappingcount <- poly.counts(kidnapping, blocks)
 ```
 
-### Plot Map:
+### Build Feature Matrix for Clustering:
 
-Took the layers I created and created a three-color choropleth map that differentiates the three classifications without using the coropleth function in R. 
+- Combine counts into a matrix (3 rows: crime types; 14,940 columns: blocks).
+- Transpose to standard ML format (blocks as rows, crimes as features).
 
 ```javascript
-# Plot Georgia
-plot(georgia)
-# Plot the new layers with the addition of "add=T" to overlay layers
-plot(urban_counties, add=T, col="orangered3")
-plot(suburban_counties, add=T, col="orange")
-plot(rural_counties, add=T, col="lightgoldenrod1")
-title("Percentage of the county's residents classified 
-      as Urban, Suburban, & Rural in Georgia     ")
-legend("topright", legend=c("Urban Counties", "Suburban Counties", "Rural Counties"), 
-       fill=c("orangered3", "orange", "lightgoldenrod1", border = "black"))
+matrix <- matrix(data = robberycount + burglary_commercialcount + kidnappingcount,
+                 nrow = 3, ncol = 14940, byrow = FALSE)
+matrix2 <- t(matrix)  # Now: rows = blocks, columns = crime types
 ```
-<img src="/images/Plot1_1.png">
 
-### Scenario:
+### Determine Optimal Number of Clusters (Elbow Method):
 
-A social organization wishes to identify counties that have both a high percentage of elderly residents (i.e., PctEld > 15) and a high percentage of residents in poverty (i.e., PctPov > 30). Created a map to show the counties with residents who have hight elderly and in poverty population in red and all other counties in white.
+- Compute within-groups sum of squares (WSS) for k = 2 to 15.
+- Plot to visually identify the "elbow" (around k = 10).
 
 ```javascript
-eldpov <- georgia[georgia$PctEld > 15 & georgia$PctPov > 30,]
-plot(eldpov)
-
-plot(georgia)
-plot(eldpov, add=T, col="red")
-title("High Percentage of the county's residents 
-      who are Elderly and residents who are in Poverty       ")
-legend("topright", legend=c("Elderly and in Poverty"), 
-       fill=c("red", border = "black"))
+wssplot <- function(data, nc = 15) {
+  wss <- rep(NA, length(2:nc))
+  for (i in 2:nc) {
+    wss[i] <- sum(kmeans(data, centers = i)$withinss)
+  }
+  plot(1:nc, wss, type = "b", xlab = "Number of Clusters",
+       ylab = "Within groups sum of squares")
+}
+wssplot(matrix2)
+title("Scree Plot (Elbow Method)")
 ```
 <img src="/images/Plot2.jpeg">
 
-### Predict median income based on the percentage of residents with a Bachelor's degree:
+### Run K-Means Clustering:
 
-Fit a linear regression model.
-- First create a basic scatterplot to visualize median income and those who have a bachelor's degree.
-- Then firt a linear regression line.
-- Run correlation test to see how strong the relationship between the two variables are (cor. 0.522771), which shows a moderate strenth relationship. As one variable increases the other tends to increase as well.
-- The output of the below linear regression model is highly statistically significant (p-value of 1.566e-12) and explains approximately 27.33% of the variance in the dependent variable. (R^2 value is 0.2733) 
+- Fit k-means with 10 centers (chosen via elbow plot above).
+- Extract cluster assignments and centers.
 
 ```javascript
-plot (georgia$MedInc,georgia$PctBach, 
-      col = "blue",
-      main = "Median Income based on the Percentage of 
-      residents with a Bachelor's degree     ",
-      xlab = "Median Income",
-      ylab = "Bachelor's degree")
-
-
-abline(lm(georgia$PctBach ~ georgia$MedInc),col="red")
-
-cor.test(georgia$PctBach,georgia$MedInc)
-
-Georgiareg <- lm (PctBach ~ MedInc, data = georgia)
-Georgiareg
-summary (Georgiareg)
-
-resid(lm(georgia$PctBach ~ georgia$MedInc))
-
-Georgiareg$residuals
-
-shades <- auto.shading(Georgiareg$residuals, cols=brewer.pal(5, "Reds"))
-choropleth(georgia, Georgiareg$residuals, shading = shades)
-title("Median Income based off the percentage of
-      residents with a Bachelor's Degree       ")
-choro.legend("topright", sh = shades, fmt="%4.1f",cex=0.8,title='Perdiction of Median Income')
+set.seed(456)
+kmeans.10 <- kmeans(matrix2, centers = 10)
 ```
+
+### Visualize Spatial Clusters:
+
+- Assign colors using a qualitative palette (Paired + Set3).
+- Plot census blocks colored by cluster membership.
+- Add title, legend, and thin borders for clarity.
+
+```javascript
+cluster_colors <- c(brewer.pal(8, "Paired"), brewer.pal(3, "Set3")[1:2])
+cols <- cluster_colors[kmeans.10map]   # kmeans.10map = kmeans.10$cluster (or sampled for demo)
+
+plot(blocks, col = cols, border = "gray50", lwd = 0.2, main = NULL)
+title("Census Blocks Colored by 10-Cluster Assignment", cex.main = 1.1, line = 2.5)
+legend("topright", legend = paste("Cluster", 1:10), fill = cluster_colors,
+       cex = 0.75, ncol = 2, bg = "white", box.col = "gray70", inset = 0.01)
+```
+
+### Results and Interpretation:
+
+- The elbow plot shows diminishing returns after ~10 clusters → selected k = 10 for balance between complexity and explanatory power.
+- The final map reveals spatial groupings of blocks with similar combinations of robbery, commercial burglary, and kidnapping counts.
+- **Clusters may highlight:**
+    - High-robbery urban core areas
+    - Commercial burglary hotspots (e.g., retail corridors)
+    - Mixed or low-incident suburban blocks
+- Further analysis could include cluster profiling (mean crime rates per cluster), spatial autocorrelation tests, or overlay with demographics.
+
 <img src="/images/Scatter_plot_with_reg_line.png">
 
 <img src="/images/regression_model.png">
