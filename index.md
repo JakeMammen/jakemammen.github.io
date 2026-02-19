@@ -7,6 +7,9 @@
 [Working with Spatial Data in R](/skills_page1)
 <img src="/images/Scatter_plot_with_reg_line.png">
 
+[K-Means Cluster Analysis](/skills_page2)
+<img src="/images/BG_clusters_plot.png">
+
 ---
 
 ## Projects
