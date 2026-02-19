@@ -79,9 +79,9 @@ wssplot <- function(data, nc = 15) {
        ylab = "Within groups sum of squares")
 }
 wssplot(matrix2)
-title("Scree Plot (Elbow Method)")
+title("Scree Plot")
 ```
-<img src="/images/Plot2.jpeg">
+<img src="/images/Scree_plot.png">
 
 ### Run K-Means Clustering:
 
@@ -109,6 +109,8 @@ legend("topright", legend = paste("Cluster", 1:10), fill = cluster_colors,
        cex = 0.75, ncol = 2, bg = "white", box.col = "gray70", inset = 0.01)
 ```
 
+<img src="/images/BG_clusters_plot.png">
+
 ### Results and Interpretation:
 
 - The elbow plot shows diminishing returns after ~10 clusters → selected k = 10 for balance between complexity and explanatory power.
@@ -119,8 +121,10 @@ legend("topright", legend = paste("Cluster", 1:10), fill = cluster_colors,
     - Mixed or low-incident suburban blocks
 - Further analysis could include cluster profiling (mean crime rates per cluster), spatial autocorrelation tests, or overlay with demographics.
 
-<img src="/images/Scatter_plot_with_reg_line.png">
+**Block groups per cluster**
 
-<img src="/images/regression_model.png">
+<img src="/images/blocks_per_cluster.png">
 
-<img src="/images/Plot3.jpeg">
+**Mean counts of each crime type in each cluster**
+
+<img src="/images/mean_counts.png">
