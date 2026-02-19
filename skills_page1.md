@@ -7,9 +7,9 @@
 
 ## Coding examples:
 
-In R I used the 'GISTools' library which contains a number of utilities for handling and visualising geographical data of a “Spatial” or “sf” object - for example choropleth mapping with 'nice' legends. The data being used is a polygon data frame containing social and economic data by county in Georiga. 
+In R I used the 'GISTools' package which contains a number of utilities for handling and visualising geographical data of a “Spatial” or “sf” object - for example choropleth mapping with 'nice' legends. The data being used is a polygon data frame containing social and economic data by county in Georiga. 
 
-### Import proper library and call the dataset:
+### Import proper R packages and call the dataset:
 
 ```javascript
 library("GISTools")
