@@ -113,7 +113,7 @@ legend("topright", legend = paste("Cluster", 1:10), fill = cluster_colors,
 
 ### Results and Interpretation:
 
-- The elbow plot shows diminishing returns after ~10 clusters → selected k = 10 for balance between complexity and explanatory power.
+- The elbow plot shows diminishing returns after ~10 clusters, selected k = 10 for balance between complexity and explanatory power.
 - The final map reveals spatial groupings of blocks with similar combinations of robbery, commercial burglary, and kidnapping counts.
 - **Clusters may highlight:**
     - High-robbery urban core areas
