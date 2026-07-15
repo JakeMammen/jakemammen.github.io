@@ -145,7 +145,14 @@ menu:
   
 # Footer customization
 footer:
-  enable_footer: false
+  enable_footer: true
   footer_title: "Jake Mammen, MS"
-  footer_description: "Portfolio showcasing geospatial, data science, GIS, and emergency management work."
+  footer_description: "Follow or connect via the links below."
   enable_social_media_icons: true
+  enable_contact_details: true
+  enable_menu_footer_primary: true
+  enable_menu_footer_secondary: false
+  enable_menu_footer_tertiary: false
+  footer_primary_menu_title: "My Projects"
+  footer_secondary_menu_title: "Company"
+  footer_tertiary_menu_title: "Other"

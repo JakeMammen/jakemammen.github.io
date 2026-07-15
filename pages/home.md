@@ -1,10 +1,10 @@
 ---
 layout: home
 permalink: "/"
-title: "Curate is a premium portfolio for <strong>Jekyll.</strong>"
-description: "Showcase your projects, work or case studies in style with this markdown powered portfolio theme for Jekyll."
-meta_description: "Jekyll Curate is a premium Jekyll blog theme"
-meta_title: Jekyll Curate - Premium Portfolio Theme
+title: "Jake Mammen, <strong>MS</strong>"
+description: "A showcase of some of my projects, work, and case studies."
+meta_description: false
+meta_title: false
 subscribe: false
 
 projects:
@@ -16,7 +16,7 @@ projects:
   view_more_button_link: "" # "/projects"
   columns: 2 # 1 | 2 | 3 | 4
 
-posts:
+posts: false
   heading: "Recent Posts"
   sub_heading: ""
   limit: 3
