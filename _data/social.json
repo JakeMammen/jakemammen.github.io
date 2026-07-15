@@ -1,0 +1,17 @@
+[
+  {
+    "title": "X",
+    "fa_icon": "fab fa-x-twitter",
+    "url": "https://x.com/jakemammen"
+  },
+  {
+    "title": "Github",
+    "fa_icon": "fab fa-github",
+    "url": "https://github.com/JakeMammen?tab=repositories"
+  },
+  {
+    "title": "Linkedin",
+    "fa_icon": "fab fa-linkedin",
+    "url": "https://www.linkedin.com/in/jake-mammen-ms-784961196/"
+  }
+]
