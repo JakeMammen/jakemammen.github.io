@@ -1,51 +1,56 @@
-## Developer Portfolio Landing Page Template
+# Jekyll Curate Premium Theme
 
-### Introduction
+Jekyll Curate is a premium portfolio theme for Jekyll.
 
-Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
+## Documentation
 
-<img src="images/demo.gif?raw=true"/>
+* Live Docs: https://www.zerostatic.io/docs/jekyll-curate
+* Demo: https://jekyll-curate.netlify.app/
 
-### Installation
+## Screenshot
 
-See full step by step tutorial [on Medium](https://medium.com/@evanca/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd).
-___
+![Jekyll Curate Theme screenshot](https://www.zerostatic.io/theme/jekyll-curate/jekyll-curate-screenshot.png)
 
-You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
+## Install
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Install Jekll
 
-### Markdown
+Make sure you have Ruby & Jekyll installed - For a step-by-step guide, read Jekyll docs [installation](https://jekyllrb.com/docs/installation/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Install Theme
 
-```markdown
-Syntax highlighted code block
+Extract the theme .zip file to your local computer. Navigate to the project root (it contains the README.md)
 
-# Header 1
-## Header 2
-### Header 3
+Run `bundle install` to install gems.
 
-- Bulleted
-- List
+Then run `bundle exec jekyll serve` to start the Jekyll local development server.
 
-1. Numbered
-2. List
+To build the Jekyll site run `bundle exec jekyll build`
 
-**Bold** and _Italic_ and `Code` text
+## Deploy
 
-[Link](url) and ![Image](src)
+### Deploy to Netlify
+
+This theme is pre-configured to deploy with [Netlify](https://docs.netlify.com/site-deploys/create-deploys/).
+
+> 💡 If you experience bundle install issues during the Netlify deployment, deleting the Gemfile.lock can sometimes help
+
+### Deploy to GitHub Pages
+
+This theme has been tested to work with GitHub Pages. If you are creating a GitHub Pages "Project site" then your site will be in a sub-folder ie `http://username.github.io/repository` You will need to update the `baseurl` in the `_config.yml` for the asset paths to work correctly.
+
+```yaml
+# _config.yml
+baseurl: "/my-repo-name" # replace this with the name of your repo
+url: ""
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+> 💡 Github pages can be tricky to configure correctly. While we have tested this theme with Github pages, we do not provide support for deploying on this platform. If you continue to experience problems we recommend trying Netlify.
 
-### Roadmap
+## Credits
 
-See the [open issues](https://github.com/evanca/quick-portfolio/issues) for a list of proposed features (and known issues).
-___
+This theme uses open-source libraries and assets.
 
-### References
-
-[1] Jekyll theme "Minimal" for GitHub Pages: https://github.com/pages-themes/minimal (CC0 1.0 Universal License)
-<br>[2] Dummy photo via: https://pixabay.com/photos/man-male-adult-person-caucasian-1209494/ (Pixabay License)
-<br>[3] Dummy thumbnail image created by rawpixel.com: https://www.freepik.com/free-vector/set-elements-infographic_2807573.htm (Standard Freepik License)
+- **Bootstrap 5.3.2** https://unsplash.com/license
+- **Font Awesome 6 Free:** https://fontawesome.com/
+- **Unsplash Images** https://unsplash.com/
