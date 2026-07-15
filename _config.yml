@@ -66,7 +66,7 @@ exclude:
 # -------------------
 # Theme Config
 # --------------------
-title: "Jekyll Theme"
+title: "Jekyll Curate"
 category_dir: category
 
 colors:
@@ -106,8 +106,18 @@ fonts:
 
 logo:
   logo_text: "Jake Mammen, MS"
-  logo_image: "/images/62113268_842339089456367_5892535769645449216_n.jpg"
-  # Adjust other logo settings (mobile, invert, etc.) as needed after copying assets
+  logo_image: assets/images/logo/J.png
+  logo_image_mobile: assets/images/logo/J.png
+  logo_image_invert: assets/images/logo/J.png
+  logo_image_invert_mobile: assets/images/logo/J.png
+  logo_image_desktop_height: "28px"
+  logo_image_desktop_width: "28px"
+  logo_image_mobile_height: "28px"
+  logo_image_mobile_width: "28px"
+  show_logo_image_on_mobile: true
+  show_logo_image_on_desktop: true
+  show_logo_text_on_mobile: false
+  show_logo_text_on_desktop: false
 
 header: 
   fixed: false
@@ -129,9 +139,13 @@ cookie_banner:
 analytics:
   google_analytics_id: "UA-000000-0"
 
+menu: 
+  show_dropdown_items_in_mobile_menu: false
+  show_social_media_in_mobile_menu: true
+  
 # Footer customization
 footer:
-  enable_footer: true
+  enable_footer: false
   footer_title: "Jake Mammen, MS"
   footer_description: "Portfolio showcasing geospatial, data science, GIS, and emergency management work."
   enable_social_media_icons: true
