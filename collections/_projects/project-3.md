@@ -1,18 +1,37 @@
 ---
-layout: project-left
-title: "Cubist Urban Home"
-description: "A spectacular building, designed by the Valencian architect Santiago Calatrava."
-date: 2018-12-20
+layout: project
+title: "Analysis of the Existing Vehicle Infrastructure in the DFW Metroplex"
+description: "Is the DFW EV charging station infrastructure sustainable?"
+date: 2021-04-08
 weight: 2
-thumbnail: "/assets/images/gen/projects/project-3-1-thumbnail.webp"
-image: "/assets/images/gen/projects/project-3-1.webp"
-client: "Region of Valencia"
-categories: ["Development"]
-role: "Building Designer"
+thumbnail: "/assets/images/gen/projects/Dallas_Driveshed_Mile-3-3-thumbnail.jpg"
+image: "/assets/images/gen/projects/Dallas_Driveshed_Mile-3-3.jpg"
+client: false
+categories: ["Infrastructure", "Case Study", "Research", "Energy", "Geospatial", "GIS"]
+role: false
 gallery:
   - image: "/assets/images/gen/projects/project-3-1.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
   - image: "/assets/images/gen/projects/project-3-4.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
   - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
+  - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
+  - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
+  - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
+  - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
+  - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
+  - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
+  - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
+  - image: "/assets/images/gen/projects/project-3-7.webp"
+    caption: "<strong>Above:</strong> North easterly aspect showing curved design"
 ---
 
 Architecture is both the process and the product of planning, designing, and constructing buildings or other structures.Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art.
