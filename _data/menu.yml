@@ -6,25 +6,25 @@ main:
     url: /projects/
     weight: 2
     child:
-      - name: "Project Layout 1"
-        icon: "/assets/images/icons/wireframe-7.svg"
-        icon_darkmode: "/assets/images/icons/wireframe-7-white.svg"
-        description: "Default Project layout"
+      - name: "Wind Farm Case Study - 2019"
+        icon: "/assets/images/icons/wireframe-1.svg"
+        icon_darkmode: "/assets/images/icons/wireframe-1-white.svg"
+        description: "Perceptions and socioeconmic impacts of wind farms"
         url: /projects/project-1/
-      - name: "Project Layout 2"
-        icon: "/assets/images/icons/wireframe-5.svg"
-        icon_darkmode: "/assets/images/icons/wireframe-5-white.svg"
-        description: "Right side layout"
+      - name: "Influence on the Development of Wind Farms"
+        icon: "/assets/images/icons/wireframe-1.svg"
+        icon_darkmode: "/assets/images/icons/wireframe-1-white.svg"
+        description: "Socioeconomic and Environmental influence on development of new wind farms"
         url: /projects/project-2/
-      - name: "Project Layout 3"
-        icon: "/assets/images/icons/wireframe-6.svg"
-        icon_darkmode: "/assets/images/icons/wireframe-6-white.svg"
-        description: "Left side layout"
+      - name: "EV Infrastructure Analysis"
+        icon: "/assets/images/icons/wireframe-1.svg"
+        icon_darkmode: "/assets/images/icons/wireframe-1-white.svg"
+        description: "Analysis of existing EV infrastructure in DFW"
         url: /projects/project-3/
-      - name: "Project Layout 4"
-        icon: "/assets/images/icons/wireframe-8.svg"
-        icon_darkmode: "/assets/images/icons/wireframe-8-white.svg"
-        description: "Top layout"
+      - name: "Statistical Analysis of Streamflow Data"
+        icon: "/assets/images/icons/wireframe-1.svg"
+        icon_darkmode: "/assets/images/icons/wireframe-1-white.svg"
+        description: "A Statistical Analysis of Streamflow Data in Oklahoma"
         url: /projects/project-4/
   - name: Blog
     url: /blog/
