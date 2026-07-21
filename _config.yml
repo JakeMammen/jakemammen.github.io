@@ -1,8 +1,9 @@
 # -------------------
 # Jekyll Config
 # --------------------
+title: "Jake Mammen, MS"
 baseurl: ""                    # Keep empty for root domain jakemammen.github.io
-url: ""   # Set this for correct absolute URLs
+url: "https://jakemammen.github.io"   # Set this for correct absolute URLs
 permalink: pretty
 markdown: kramdown
 highlighter: rouge
