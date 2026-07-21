@@ -8,8 +8,8 @@ meta_title: false
 subscribe: false
 
 projects:
-  heading: "" # "Projects"
-  sub_heading: "" # "A collection of our recent work"
+  heading: "Featured Projects" # "Projects"
+  sub_heading: "Collection of my recent work" # "A collection of our recent work"
   limit: 4
   sort: date # date | weight
   view_more_button_text: "" # "More Projects"
