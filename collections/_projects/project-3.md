@@ -3,7 +3,7 @@ layout: project
 title: "Analysis of the Existing Vehicle Infrastructure in the DFW Metroplex"
 description: "Is the DFW EV charging station infrastructure sustainable?"
 date: 2021-04-08
-weight: 2
+weight: 1
 thumbnail: "/assets/images/gen/projects/Dallas_Driveshed_Mile-3-3-thumbnail.jpg"
 image: "/assets/images/gen/projects/Dallas_Driveshed_Mile-3-3.jpg"
 client: false
