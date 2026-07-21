@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Analysis of the Existing Vehicle Infrastructure in the DFW Metroplex"
+title: "Analysis of Electric Vehicle Infrastructure in the DFW Metroplex"
 description: "Is the DFW EV charging station infrastructure sustainable?"
 date: 2021-04-08
 weight: 1

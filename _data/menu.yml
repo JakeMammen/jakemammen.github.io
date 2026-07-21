@@ -19,7 +19,7 @@ main:
       - name: "EV Infrastructure Analysis"
         icon: "/assets/images/icons/wireframe-1.svg"
         icon_darkmode: "/assets/images/icons/wireframe-1-white.svg"
-        description: "Analysis of existing EV infrastructure in DFW"
+        description: "Analysis of EV infrastructure in DFW"
         url: /projects/project-3/
       - name: "Statistical Analysis of Streamflow Data"
         icon: "/assets/images/icons/wireframe-1.svg"
