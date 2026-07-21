@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to my Portfolio"
 date: 2026-07-15
 authors: ["Jake Mammen"]
-categories: false
+categories: ["Research"]
 description: "Showcasing my work, experience, and skills"
 thumbnail: "/assets/images/gen/blog/blog-welcome-thumbnail.png"
 image: "/assets/images/gen/blog/blog-welcome-large.png"
