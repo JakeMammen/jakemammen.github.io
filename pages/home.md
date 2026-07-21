@@ -16,7 +16,7 @@ projects:
   view_more_button_link: "" # "/projects"
   columns: 2 # 1 | 2 | 3 | 4
 
-posts: false
+posts:
   heading: "Recent Posts"
   sub_heading: ""
   limit: 3
