@@ -119,10 +119,10 @@ logo:
   logo_image_mobile: assets/images/logo/J.png
   logo_image_invert: assets/images/logo/J.png
   logo_image_invert_mobile: assets/images/logo/J.png
-  logo_image_desktop_height: "28px"
-  logo_image_desktop_width: "28px"
-  logo_image_mobile_height: "28px"
-  logo_image_mobile_width: "28px"
+  logo_image_desktop_height: "50px"
+  logo_image_desktop_width: "50px"
+  logo_image_mobile_height: "50px"
+  logo_image_mobile_width: "50px"
   show_logo_image_on_mobile: true
   show_logo_image_on_desktop: true
   show_logo_text_on_mobile: false
