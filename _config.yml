@@ -96,6 +96,13 @@ colors:
   base_text_2_dark: "#929eaf"
   logo_text_dark: "#fdfcf9"
   header_text_dark: "#fdfcf9"
+  link_color: "#0d042b"
+  link_hover_color: "#3b364c"
+  accent_color: "#0d042b"
+  border_color: "#e5e0d8"
+  gray: "#6b7280"
+  gray_light: "#9ca3af"
+  gray_dark: "#374151"
 
 fonts:
   use_google_fonts: false
