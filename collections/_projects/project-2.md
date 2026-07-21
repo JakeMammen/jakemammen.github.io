@@ -3,7 +3,7 @@ layout: project
 title: "Understanding the Influence of Socioeconomic and Enviromental Characteristics on the Developmet of New Wind Farms."
 description: "Importance of understanding what may impact or influcence wind farm development apart from public perception"
 date: 2022-05-06
-weight: 1
+weight: 3
 thumbnail: "/assets/images/gen/projects/TX_TotHousingUnits_WF-2-2-thumbnail.png"
 image: "/assets/images/gen/projects/TX_TotHousingUnits_WF-2-2.png"
 categories: ["Research", "Energy", "Geospatial"]
