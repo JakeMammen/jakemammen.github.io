@@ -98,7 +98,8 @@ colors:
 
 fonts:
   use_google_fonts: false
-  use_self_hosted_fonts: true
+  google_fonts_url: "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,700&family=Fira+Mono&display=swap"
+  use_self_hosted_fonts: true # font files must be placed in /assets/fonts folder and the @font-face definitions must be added to /assets/css/fonts.css
   heading: "'DM Sans'"
   base: "'DM Sans'"
   monospace: "'Fira Mono'"
