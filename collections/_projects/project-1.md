@@ -1,5 +1,5 @@
 ---
-layout: project # alternative layouts: project, project-left, project-right, project-top
+layout: project-top # alternative layouts: project, project-left, project-right, project-top
 title: "Comparing the perceptions and socioeconomic impacts of wind farms over time: a case study of Weatherford, Oklahoma"
 description: "Importance of understanding the impacts wind farms have on the local community and how those impacts change over time"
 date: 2019-05-12
