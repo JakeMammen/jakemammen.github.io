@@ -1,3 +1,14 @@
+---
+layout: post
+title: "Working with Spatial Data in R"
+date: 2026-07-22
+authors: ["Jake Mammen"]
+categories: ["Geospatial", "GIS", "Experience and Skills"]
+description: "Spatial analysis in R"
+thumbnail: "/assets/images/gen/blog/Plot1_1-thumbnail.png"
+image: "/assets/images/gen/blog/Plot1_1.png"
+---
+
 ## Working with Spatial Data in R
 
 **Description:** In spatial statistics, you want to always explore the data you're working with as a go-to first step. It's considered good pratice to plot and visualize the data before fitting any statistical models.
@@ -54,7 +65,7 @@ title("Percentage of the county's residents classified
 legend("topright", legend=c("Urban Counties", "Suburban Counties", "Rural Counties"), 
        fill=c("orangered3", "orange", "lightgoldenrod1", border = "black"))
 ```
-<img src="/images/Plot1_1.png">
+<img src="/assets/images/gen/blog/Plot1_1.png">
 
 ### Scenario:
 
@@ -71,7 +82,7 @@ title("High Percentage of the county's residents
 legend("topright", legend=c("Elderly and in Poverty"), 
        fill=c("red", border = "black"))
 ```
-<img src="/images/Plot2.jpeg">
+<img src="/assets/images/gen/blog/Plot2.jpeg">
 
 ### Predict median income based on the percentage of residents with a Bachelor's degree:
 
@@ -108,9 +119,8 @@ title("Median Income based off the percentage of
       residents with a Bachelor's Degree       ")
 choro.legend("topright", sh = shades, fmt="%4.1f",cex=0.8,title='Perdiction of Median Income')
 ```
-<img src="/images/Scatter_plot_with_reg_line.png">
+<img src="/assets/images/gen/blog/Scatter_plot_with_reg_line.png">
 
-<img src="/images/regression_model.png">
+<img src="/assets/images/gen/blog/regression_model.png">
 
-<img src="/images/Plot3.jpeg">
-
+<img src="/assets/images/gen/blog/Plot3.jpeg">

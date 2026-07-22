@@ -1,7 +1,16 @@
-# Spatial Clustering of Crime Patterns in Fort Worth, TX  
-**K-Means Analysis of Robbery, Commercial Burglary, and Kidnapping at the Census Block Level**
+---
+layout: post
+title: "Spatial Clustering of Crime Patterns in Fort Worth, TX"
+date: 2026-07-22
+authors: ["Jake Mammen"]
+categories: ["Geospatial", "GIS", "Experience and Skills", "Research"]
+description: "K-Means Analysis of Robbery, Commercial Burglary, and Kidnapping at the Census Block Level"
+thumbnail: "/assets/images/gen/blog/BG_clusters_plot-thumbnail.png"
+image: "/assets/images/gen/blog/BG_clusters_plot.png"
+---
 
-**Description:** This project applies **machine-learning based clustering** (k-means clustering) to explore spatial patterns in selected serious crimes across Fort Worth, Texas. By aggregating counts of robbery, commercial burglary, and kidnapping incidents to census block groups, we identify clusters of similar crime profiles and visualize them on a map.
+# Description
+This project applies **machine-learning based clustering** (k-means clustering) to explore spatial patterns in selected serious crimes across Fort Worth, Texas. By aggregating counts of robbery, commercial burglary, and kidnapping incidents to census block groups, we can identify clusters of similar crime profiles and visualize them on a map.
 
 The analysis uses geospatial data handling in R, point-in-polygon counting, elbow-method cluster selection, and choropleth mapping to reveal potential crime "hotspots" or typological groupings.
 - Aggregates point-based crime incidents to census block groups using `spatstat::poly.counts`
@@ -81,7 +90,7 @@ wssplot <- function(data, nc = 15) {
 wssplot(matrix2)
 title("Scree Plot")
 ```
-<img src="/images/Scree_plot.png">
+<img src="/assets/images/gen/blog/Scree_plot.png">
 
 ### Run K-Means Clustering:
 
@@ -109,7 +118,7 @@ legend("topright", legend = paste("Cluster", 1:10), fill = cluster_colors,
        cex = 0.75, ncol = 2, bg = "white", box.col = "gray70", inset = 0.01)
 ```
 
-<img src="/images/BG_clusters_plot.png">
+<img src="/assets/images/gen/blog/BG_clusters_plot.png">
 
 ### Results and Interpretation:
 
@@ -123,8 +132,8 @@ legend("topright", legend = paste("Cluster", 1:10), fill = cluster_colors,
 
 **Block groups per cluster**
 
-<img src="/images/blocks_per_cluster.png">
+<img src="/assets/images/gen/blog/blocks_per_cluster.png">
 
 **Mean counts of each crime type in each cluster**
 
-<img src="/images/mean_counts.png">
+<img src="/assets/images/gen/blog/mean_counts.png">
