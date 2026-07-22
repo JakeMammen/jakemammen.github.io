@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-right
 title: "Analysis of Electric Vehicle Infrastructure in the DFW Metroplex"
 description: "Is the DFW EV charging station infrastructure sustainable?"
 date: 2021-04-08
@@ -9,6 +9,7 @@ image: "/assets/images/gen/projects/Dallas_Driveshed_Mile-3-3.jpg"
 client: false
 categories: ["Infrastructure", "Case Study", "Research", "Energy", "Geospatial", "GIS"]
 role: false
+gallery_limit: 15
 gallery:
   - image: "/assets/images/gen/projects/Charging_stations_DFW.jpg"
     caption: "<strong>Figure 1:</strong> Map of charging stations across the DFW Metroplex."

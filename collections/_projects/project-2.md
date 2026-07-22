@@ -9,7 +9,7 @@ image: "/assets/images/gen/projects/TX_TotHousingUnits_WF-2-2.png"
 categories: ["Research", "Energy", "Geospatial"]
 client: false
 role: false
-gallery_limit: 0
+gallery_limit: 24
 gallery:
   - image: "/assets/images/gen/projects/SumStat_IA-2-2.png"
     caption: "<strong>Table 1:</strong> Five number summary of socioeconomic variables in Iowa. Data: US Census Bureau."
