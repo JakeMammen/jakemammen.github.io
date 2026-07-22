@@ -24,4 +24,4 @@ Overall, this study found that the streamflow data across both locations had a l
 
 Check out the full study in the below link.
 
-[A Statistical Analysis of Streamflow data in Oklahoma](assets/pdf/Term_Project_Final_Draft.pdf)
+[A Statistical Analysis of Streamflow data in Oklahoma](/assets/pdf/Term_Project_Final_Draft.pdf)
