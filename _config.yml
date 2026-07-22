@@ -115,10 +115,10 @@ fonts:
 
 logo:
   logo_text: "Jake Mammen, MS"
-  logo_image: assets/images/logo/J.png
-  logo_image_mobile: assets/images/logo/J.png
-  logo_image_invert: assets/images/logo/J.png
-  logo_image_invert_mobile: assets/images/logo/J.png
+  logo_image: assets/images/logo/home.svg
+  logo_image_mobile: assets/images/logo/home.svg
+  logo_image_invert: assets/images/logo/home.svg
+  logo_image_invert_mobile: assets/images/logo/home.svg
   logo_image_desktop_height: "50px"
   logo_image_desktop_width: "50px"
   logo_image_mobile_height: "50px"
