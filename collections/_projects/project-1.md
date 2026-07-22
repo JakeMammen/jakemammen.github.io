@@ -4,13 +4,13 @@ title: "Comparing the perceptions and socioeconomic impacts of wind farms over t
 description: "Importance of understanding the impacts wind farms have on the local community and how those impacts change over time"
 date: 2019-05-12
 weight: 3
-thumbnail: "/assets/images/gen/projects/poster-1-1-thumbnail.png"
-image: "/assets/images/gen/projects/poster-1-1.png"
+thumbnail: "/assets/images/gen/projects/Poster-1-1-thumbnail.png"
+image: "/assets/images/gen/projects/Poster-1-1.png"
 categories: ["Research", "Case Study"]
 client: false
 role: false
 gallery:
-  - image: "/assets/images/gen/projects/poster-1-1.png"
+  - image: "/assets/images/gen/projects/Poster-1-1.png"
 ---
 
 Wind energy has become one of the leading producers in renewable energy. There will always be a demand for energy, so being able to extract clean renewable energy has become very important for the public and the surrounding communities. 
