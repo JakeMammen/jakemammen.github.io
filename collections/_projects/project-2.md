@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-left
 title: "Understanding the Influence of Socioeconomic and Enviromental Characteristics on the Developmet of New Wind Farms."
 description: "Importance of understanding what may impact or influcence wind farm development apart from public perception"
 date: 2022-05-06
@@ -9,6 +9,7 @@ image: "/assets/images/gen/projects/TX_TotHousingUnits_WF-2-2.png"
 categories: ["Research", "Energy", "Geospatial"]
 client: false
 role: false
+gallery_limit: 0
 gallery:
   - image: "/assets/images/gen/projects/SumStat_IA-2-2.png"
     caption: "<strong>Table 1:</strong> Five number summary of socioeconomic variables in Iowa. Data: US Census Bureau."
