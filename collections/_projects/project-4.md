@@ -11,6 +11,7 @@ client: false
 categories: ["Research", "Projects", "Case Study"]
 role: false
 gallery:
+  - image: "/assets/images/gen/projects/Harrah_OK-4-4.png"
   - image: "/assets/images/gen/projects/measurement_rating_harrah-4-4.jpg"
   - image: "/assets/images/gen/projects/measurement_rating_woodward-4-4.jpg"
   - image: "/assets/images/gen/projects/stream_analysis_woodward-4-4.png"
@@ -22,6 +23,6 @@ This study compared the differences in streamflow of the North Canadian River ac
 
 Overall, this study found that the streamflow data across both locations had a lot more similarities than differences. However, there was enough information to suggest that there were differences in discharge over time. Similar studies like this can help bring forth useful information, to aid decision makers on how to manage water use in the future.
 
-Check out the full study in the below link.
+Full study in the below link.
 
-[A Statistical Analysis of Streamflow data in Oklahoma](/assets/pdf/Term_Project_Final_Draft.pdf)
+[A Statistical Analysis of Streamflow data in Oklahoma](/assets/pdf/Statistical_Analysis_Streamflow_Data.pdf)
