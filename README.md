@@ -1,56 +1,60 @@
-# Jekyll Curate Premium Theme
+# Jake Mammen, MS — Professional Portfolio
 
-Jekyll Curate is a premium portfolio theme for Jekyll.
+This repository powers the personal portfolio website of **Jake Mammen, MS**, hosted at [https://jakemammen.github.io/](https://jakemammen.github.io/).
 
-## Documentation
+The site serves as a professional showcase of geospatial analysis, data science, GIS, and statistical research projects, with particular emphasis on renewable energy siting, infrastructure assessment, and environmental data analysis.
 
-* Live Docs: https://www.zerostatic.io/docs/jekyll-curate
-* Demo: https://jekyll-curate.netlify.app/
+## About
 
-## Screenshot
+I hold a Master of Science in Geography and Envrionmental Sustainability with a focus in Geospatial Technology from the University of Oklahoma. My work centers on applied geospatial methods, spatial statistics, and data-driven decision support. The portfolio highlights selected academic and analytical projects that demonstrate proficiency in mixed-methods research, spatial clustering, network analysis, statistical modeling, and cartographic communication.
 
-![Jekyll Curate Theme screenshot](https://www.zerostatic.io/theme/jekyll-curate/jekyll-curate-screenshot.png)
+The site is built to present concise project summaries suitable for professional review by colleagues, employers, and collaborators in emergency management, geospatial technology, data science, and related fields.
 
-## Install
+## Featured Projects
 
-### Install Jekll
+The portfolio currently features the following projects:
 
-Make sure you have Ruby & Jekyll installed - For a step-by-step guide, read Jekyll docs [installation](https://jekyllrb.com/docs/installation/)
+- **Comparing the perceptions and socioeconomic impacts of wind farms over time: a case study of Weatherford, Oklahoma**  
+  Mixed-methods analysis comparing public perceptions and socioeconomic effects of a operational wind farm against earlier baseline research (Greene & Giesken, 2013). Methods include surveys, semi-structured interviews, and economic impact modeling.
 
-### Install Theme
+- **Understanding the Influence of Socioeconomic and Environmental Characteristics on the Development of New Wind Farms**  
+  Geospatial and statistical examination of wind turbine locations across Iowa, Oklahoma, and Texas. The study evaluates spatial clustering (point process models and Monte Carlo simulations), socioeconomic variables from U.S. Census data, and land-cover change using the U.S. Wind Turbine Database (USWTDB) and related sources.
 
-Extract the theme .zip file to your local computer. Navigate to the project root (it contains the README.md)
+- **Analysis of Electric Vehicle Infrastructure in the DFW Metroplex**  
+  County- and census-tract-level geospatial assessment of EV charging station distribution, accessibility (network analysis / drivesheds), and equity considerations relative to demographic and socioeconomic indicators in the Dallas–Fort Worth region.
 
-Run `bundle install` to install gems.
+- **A Statistical Analysis of Streamflow Data in Oklahoma**  
+  Comparative statistical evaluation of streamflow characteristics at two locations on the North Canadian River, employing t-tests, ANOVA, correlation/regression, principal component analysis, and clustering techniques.
 
-Then run `bundle exec jekyll serve` to start the Jekyll local development server.
+Project pages include detailed descriptions, methods, findings, and supporting materials.
 
-To build the Jekyll site run `bundle exec jekyll build`
+## Technology Stack
 
-## Deploy
+- **Static Site Generator**: Jekyll
+- **Theme**: Jekyll Curate (premium portfolio theme)
+- **Front-end**: Bootstrap 5.3.2, Font Awesome 6, custom Sass
+- **Markdown**: kramdown with Rouge syntax highlighting
+- **Deployment**: GitHub Pages (primary) with optional Netlify support
+- **Other**: Self-hosted fonts (DM Sans, Fira Mono), Open Graph metadata, optional Google Analytics
 
-### Deploy to Netlify
+## License and Credits
 
-This theme is pre-configured to deploy with [Netlify](https://docs.netlify.com/site-deploys/create-deploys/).
+This site is based on the Jekyll Curate premium theme by Zerostatic.
 
-> 💡 If you experience bundle install issues during the Netlify deployment, deleting the Gemfile.lock can sometimes help
+### Zerostatic Pro License
 
-### Deploy to GitHub Pages
+Copyright (c) 2018 Robert Austin - Zerostatic Themes - www.zerostatic.io
 
-This theme has been tested to work with GitHub Pages. If you are creating a GitHub Pages "Project site" then your site will be in a sub-folder ie `http://username.github.io/repository` You will need to update the `baseurl` in the `_config.yml` for the asset paths to work correctly.
+**Things you can do**
 
-```yaml
-# _config.yml
-baseurl: "/my-repo-name" # replace this with the name of your repo
-url: ""
-```
+- This License grants you, the purchaser, an ongoing, non-exclusive, worldwide license to make use of this theme.
+- You are licensed to use this theme to create one single end product for yourself, your company or for one client.
+- An end product is a customized implementation of this theme, usually a new website, which requires an application of skill and effort to be created.
+- You can create one end product for a client, and you can transfer that single end product to your client for any fee. This license is then transferred to your client.
+- You can modify this theme and can combine it with other works and plugins to create your single end product. The resulting end product is subject to the terms of the license. You can do these things as long as the end product you then create is one that’s permitted by the license.
 
-> 💡 Github pages can be tricky to configure correctly. While we have tested this theme with Github pages, we do not provide support for deploying on this platform. If you continue to experience problems we recommend trying Netlify.
+**Things you can't do**
 
-## Credits
-
-This theme uses open-source libraries and assets.
-
-- **Bootstrap 5.3.2** https://unsplash.com/license
-- **Font Awesome 6 Free:** https://fontawesome.com/
-- **Unsplash Images** https://unsplash.com/
+- You can't re-distribute or re-sell this theme as stock, in a tool or template.
+- You can't re-distribute, re-sell or provision this theme from a 'hosting' service, a "website builder" or a SAAS product.
+- You can’t use the Zerostatic logo, or any trademarks associated with Zerostatic.
