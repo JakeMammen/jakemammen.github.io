@@ -162,6 +162,7 @@ footer:
   enable_menu_footer_primary: true
   enable_menu_footer_secondary: false
   enable_menu_footer_tertiary: false
+  footer_contact_details_title: "Contact Me"
   footer_primary_menu_title: "My Projects"
   footer_secondary_menu_title: "Company"
   footer_tertiary_menu_title: "Other"
